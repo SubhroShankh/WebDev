@@ -1,0 +1,76 @@
+/* div{
+    height:200px;
+    width: 200px;
+    background-color: rgba(255,0,0,0); 
+    background-color: rgba(255,0,0,1); 
+    background-color: #ff000080;
+} */
+
+/* #opacity{
+    background-color: #ffa511;
+    opacity: 1;    =>(comment)this is for entire element and the above one
+    was for just color like 00 11 ff
+} */
+
+/* div{
+    height:100px;
+    width: 100px;
+    background-color: #4dff00ff;
+    margin:  0 auto;
+    margin-top: 10px;
+    transition: margin-top 2s ease-in 0.2s;
+}
+div:hover{
+     background-color: black;
+    border-radius: 50%; 
+
+    margin-top: 400px;
+    background-color: pink;
+} */
+
+/* section{
+    margin-top: 100px;
+}
+div{
+    width:200px;
+    height:50px;
+    text-align: center;
+    background-color: #7aa874; */
+    /* border:2px solid black; */
+    /* margin: 10px auto;
+    box-shadow: 2px 2px 8px rgb(8, 8, 8);
+} */
+
+/* div:nth-of-type(2n){
+    background-color: #f7db6a;
+}
+div:nth-of-type(3n){
+    background-color: #ebb02d;
+} */
+
+/* transform rotate */
+
+/* #one{
+    transform: rotate(45deg);
+}
+#two{
+    transform:scale(2,0.5);
+}
+#three{
+    transform: translate(100px)
+}
+#forth{
+    transform:skew(40deg);
+}
+#five {
+    transform: rotate(45deg) translateX(50px);
+} */
+ div{
+    width: 400px;
+    height: 200px;
+    background-color: #7aa874;
+    margin: 10px auto;
+    background-image:url("claude.jpg") ;
+    background-size:contain;
+    background-size:cover;
+ }

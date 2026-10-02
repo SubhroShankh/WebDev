@@ -1,0 +1,27 @@
+/* h1 {
+  color: red;
+  background-color: black;
+}
+
+p {
+  color: pink;
+  background-color: yellow;
+}
+
+button {
+  color: beige;
+  background-color: gold;
+} */
+
+/* RGB color system */
+/* h2 {
+  color: rgb(255, 255, 0);
+} */
+
+/* Hex-code color system(0-9)+A-F =>16 digits */
+h2 {
+  /* color: #000000; */
+  /* color:#ffff00; */
+  /* color: #0000ff; */
+  color: #ff00ff;
+}

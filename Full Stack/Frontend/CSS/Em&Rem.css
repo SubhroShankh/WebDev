@@ -1,0 +1,31 @@
+/* USE: 'em' sizes relative to its parent element's font-size, while 'rem' sizes relative to the root (html) element's font-size. */
+/* DRAWBACK OF EM: When 'em' is used on nested elements, the sizes compound/multiply exponentially, making it very difficult to predict and control the final size. */
+
+html {
+    font-size: 16px; /* This is the root size that 'rem' will look at */
+}
+
+#outer {
+    height: 400px;
+    width: 600px;
+    border: 2px solid black;
+    background-color: pink;
+    font-size: 20px; /* This is the parent size that 'em' will look at */
+    padding: 1rem;
+}
+
+#inner-em {
+    background-color: cornflowerblue;
+    font-size: 2em; /* Calculates as 2 * 20px (parent size) = 40px */
+    margin-bottom: 10px;
+}
+
+#nested-em {
+    background-color: lightblue;
+    font-size: 2em; /* Calculates as 2 * 40px (parent size) = 80px! This is the compounding drawback in action. */
+}
+
+#inner-rem {
+    background-color: lightgreen;
+    font-size: 2rem; /* Calculates as 2 * 16px (root html size) = 32px. It ignores the 20px set on #outer. */
+}

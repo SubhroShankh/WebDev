@@ -1,0 +1,17 @@
+/* h2{
+    display: inline;
+    background-color: red;
+}
+span{
+    display: block;
+    background-color: yellowgreen;
+} */
+
+span{
+    background-color: green;
+    border: 2px solid black;
+    /* there's a thing to notice in span element, we cannot set height and width at all,
+    and padding and margin feature is only working for left and right,not top and bottom.
+    so, to solve this kind of problem, as inline propety dosen't respect width and height 
+    CSS properties => instead of writing "display: inline" we will write"display: inline-block"*/
+}

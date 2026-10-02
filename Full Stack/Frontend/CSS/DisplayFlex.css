@@ -1,0 +1,74 @@
+#container {
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    
+    /* Activate flexbox container */
+    display: flex;
+    
+    /* MAIN AXIS (Direction of items) */
+    flex-direction: row; /* Default: Left to right */
+    /* flex-direction: column;        Top to bottom */
+    /* flex-direction: row-reverse;   Right to left */
+    
+    /* JUSTIFY-CONTENT (Alignment along the main axis) */
+    /* justify-content: flex-start;   Items packed at the start */
+    /* justify-content: flex-end;     Items packed at the end */
+    /* justify-content: space-between; Max space between items */
+    /* justify-content: space-around; Even space around items */
+    justify-content: center; /* Items packed in the center */
+    
+    /* FLEX-WRAP (Handling items that overflow) */
+    /* flex-wrap: nowrap;             Default: Force one line */
+    flex-wrap: wrap; /* Allow items to wrap to a new line */
+    /* flex-wrap: wrap-reverse;       Wrap upwards instead of downwards */
+    
+    /* ALIGN-ITEMS (Alignment along the cross axis for a single row) */
+    /* align-items: stretch;          Default: Fill container height */
+    /* align-items: flex-start;       Align to top */
+    /* align-items: flex-end;         Align to bottom */
+    /* align-items: center;           Align to exact middle */
+    align-items: baseline; /* Align based on the text base line */
+    
+    /* ALIGN-CONTENT (Alignment of multiple wrapped lines) */
+    /* align-content: flex-start;     Lines packed at top */
+    /* align-content: space-between;  Spread lines apart */
+    align-content: center; /* Lines packed in the center */
+}
+
+h1 {
+    text-align: center;
+}
+
+#container div {
+    height: 100px;
+    width: 300px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* --- INDIVIDUAL FLEX ITEMS --- */
+
+#org {
+    /* ALIGN-SELF (Override container's align-items just for this box) */
+    align-self: flex-start; /* Move just this box to top */
+    /* align-self: flex-end;   Move just this box to bottom */
+    /* align-self: center;     Move just this box to middle */
+    
+    /* FLEX SHORTHAND: flex-grow | flex-shrink | flex-basis */
+    /* Replaces your separate flex-basis and flex-grow properties */
+    flex: 1 1 500px; 
+}
+
+#blue {
+    /* FLEX SHORTHAND */
+    /* 2 = grow twice as fast, 1 = shrink normally, 200px = initial size */
+    flex: 2 1 200px; 
+    
+    /* ORDER (From flowchart: Changes visual sequence without changing HTML) */
+    /* Default order is 0. Negative numbers move items to the front. */
+    order: -1; /* This will make the blue box appear first! */
+}
